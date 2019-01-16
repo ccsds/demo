@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="jquery图片懒加载">
+    <meta name="description" content="一款基于jQuery的插件的图片懒加载(延迟加载)特效,
+懒加载的主要目的是作为服务器前端的优化，减少请求数或延迟请求数。">
+	 <title>Jquery实现图片懒加载（延时加载）插件_湖南潭州教育Web前端</title>
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+</head>
+<body>
+<!--Tz_box start-->
+<div id="Tz_box">
+    <!--ul start-->
+    <ul>
+        <li><img src="images/1.jpg" width="288" height="180" alt="welcome to"></li>
+        <li><img src="images/2.jpg" width="288" height="180" alt="动漫小美女"></li>
+        <li><img src="images/3.jpg" width="288" height="180" alt="动漫小男生"></li>
+        <li><img src="images/4.jpg" width="288" height="180" alt="星空图片"></li>
+        <li><img src="images/5.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/6.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/7.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/8.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/9.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/10.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/11.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/12.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/13.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/14.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/15.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/16.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/17.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/18.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/19.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/20.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/21.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/36.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/37.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/38.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/39.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/40.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/3.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/4.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/5.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/2.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/12.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/13.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/14.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/15.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/16.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/3.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/4.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/5.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/2.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/3.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/24.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/15.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/23.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/32.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/4.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/5.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/2.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/3.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/4.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/12.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/13.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/14.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/15.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/2.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/3.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/4.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/5.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/5.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/2.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/3.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/4.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/5.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/2.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/3.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/4.jpg" width="288" height="180" alt="懒加载图片"></li>
+        <li><img src="images/5.jpg" width="288" height="180" alt="懒加载图片"></li>
+    </ul>
+    <!--ul end-->
+</div>
+<!--Tz_box end-->
+<!-- js start-->
+<script src="js/jquery-1.11.1.min.js"></script> //jquery
+<script src="js/lazyload.js"></script> //懒加载插件
+<script src="js/demo.js"></script>   //调用插件js
+<!-- js end-->
+</body>
+</html>

@@ -1,0 +1,8 @@
+* { margin: 0px; padding: 0px; }
+body { background-color: #434343; }
+#Tz_box { width: 960px; background: #2d2d2e; margin: 50px auto; overflow: hidden; padding: 10px; border-radius: 10px }
+/*注意box-shadow兼容性 以及去掉li的默认标点*/
+#Tz_box ul li { list-style: none; width: 288px; float: left; margin: 10px 15px; border-radius: 10px; overflow: hidden; -webkit-box-shadow: 0 0 3px #cccccc; -moz-box-shadow: 0 0 3px #ffffff; box-shadow: 0 0 3px #ffffff; }
+#Tz_box ul li img { display: block; border-radius: 10px; cursor: pointer; }
+#Tz_box .txt { width: 100%; height: 40px; box-shadow: 1px 1px 5px #000000; text-align: center; line-height: 40px; }
+#Tz_box ul li img:hover { opacity: 0.7; }
